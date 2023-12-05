@@ -1,0 +1,236 @@
+ 
+<!DOCTYPE html>
+<html>
+  <html lang="en-CA">
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <!--code taken from: https://www.w3schools.com/cssref/sel_target.php 
+                        https://www.w3schools.com/css/default.asp#gsc.tab=0-->
+    
+<body>
+<head>
+  <title> Susanna's K-drama Website </title>
+ <style>
+ body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+   /* Style the header */
+.header {
+  padding: 80px;
+  text-align: left;
+  background: #036666;
+  background-image: url("https://static.vecteezy.com/system/resources/previews/011/426/070/original/aesthetic-white-and-green-background-with-space-for-text-modern-background-design-with-liquid-shape-white-background-with-green-liquid-shapes-free-vector.jpg");
+  color: white;
+}
+
+   /* Increase the font size of the h1 element */
+.header h1 {
+  font-size: 60px;
+  color: white;
+}
+
+   /* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+   /* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+   /* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.p{
+  padding: 10px;
+  color: white;
+}
+
+
+#PopularShows {
+    background-color: #469D89;
+    color: white;
+  padding: 10px 50px;
+ display: none; 
+  }
+  #Must-Watch {
+    background-color: #469D89;
+     color: white;
+    padding: 10px 50px;
+ display: none; 
+  }
+
+#Home {
+ background-color: #248277;
+  color: white;
+    padding: 10px 50px;
+
+  }
+
+  #Link {
+    background-color: #248277;
+    color: white;
+    padding: 10px 50px;
+    display: none;
+  }
+  
+ 
+  #Link:target { 
+  display: block; 
+} 
+  #PopularShows:target { 
+  display: block; 
+} 
+ #Must-Watch:target { 
+  display: block; 
+}   
+ #Home:target { 
+  display: block; 
+} 
+  </style>
+</head>
+  
+  <div class="header">
+  <h1>K-DramaCool</h1>
+  <p>A website created by Susanna.</p>
+</div>
+
+ <div class="navbar">
+<a href="#Home">Home Link</a>
+<a href="#PopularShows">Popular Shows</a>
+<a href="#Must-Watch" > Must-Watch</a>
+<a href="#Link">Link</a>
+  </div> 
+
+ <div id="Home">
+   <p> Welcome to <b>K-DramaCool</b>.
+     This site shows popular Korean dramas of 2023, some of my top-5 <strong>must-watch</strong> K-dramas, and also some links as to where to watch these K-dramas for free.
+      To view more details, please click on the below links.
+     <ul>
+     <li><a href="#PopularShows">Popular Shows</a></li>
+       <li><a href="#Must-Watch" > Must-Watch</a></li>
+       <li><a href="#Link">Link</a></li>
+    </ul>
+   </p>
+</div>
+
+<div id="PopularShows">
+  <h3> Here are some Popular K-dramas of 2023:</h3><br>
+
+   
+    <p style="display:inline-block; padding:10px">
+    <a href="https://asianwiki.com/Dr._Romantic_3"target="_blank"><b>1. Dr. Romantic 3</b></a><br>     
+    <img src="https://asianwiki.com/images/f/fd/Dr_Romantic_3-mp01.jpg" alt="Dr.Romantic3"style="width:350px; height=200px; padding:10px">
+    </p>
+     
+ <p style="display:inline-block; padding:10px">
+  <a href= "https://asianwiki.com/The_Good_Bad_Mother"target="_blank"><b>2. The Good Bad Mother</b></a><br>
+    <img src="https://i.mydramalist.com/E5x540_4f.jpg" alt="mydramalist.com" width="200" height="280" style="padding:10px"> 
+    </p>
+
+  <p style="display:inline-block; padding:10px">
+  <a href="https://asianwiki.com/Taxi_Driver_2"target="_blank"><b>3. Taxi Driver 2 </b></a><br>
+    <img src="https://asianwiki.com/images/2/2f/Taxi_Driver-teaser03S02.jpeg"alt="asianwiki.com" width="350" height="210" style="padding:10px">
+   </p>
+    
+ 
+    <p style="display:inline-block; padding:10px">
+   <a href="https://asianwiki.com/Tale_of_the_Nine_Tailed_1938"target="_blank"><b>4. The Tale of the Nine-Tailed 1938</b></a><br>
+    <img src="https://m.media-amazon.com/images/S/pv-target-images/9b2d611b7f3451e544489c105591ec9d6a3b412d58f54f11c7100c1f5ed913ef.jpg"alt="media-amazon.com" width="320" height="240" style="padding:10px">  
+    </p>
+    
+     
+    <p style="display:inline-block; padding:10px">
+    <a href="https://asianwiki.com/Bloodhounds_(Netflix)"target="_blank"><b>5. Bloodhounds </b></a><br>
+    <img src="https://asianwiki.com/images/2/2f/Bloodhounds-p1.jpg" alt="asianwiki.com" width="200" height="280" style="padding:10px"> 
+      </p>
+     
+    <p style="display:inline-block; padding:10px">
+    <a href="https://asianwiki.com/See_You_in_My_19th_Life"target="_blank"><b>6. See You in My 19th Life </b></a><br>
+    <img src="https://m.media-amazon.com/images/M/MV5BMGU1MzYzYWEtMDRmOS00ODhmLTg2MDMtZTM5NDk2ZjJlOWVhXkEyXkFqcGdeQXVyMTM1MjI2OTYx._V1_.jpg"alt="m-media-amazon.com" width="200" height="280" style="padding:10px">
+  </p>
+    
+    <p style="display:inline-block; padding:10px">
+     <a href="https://asianwiki.com/My_Perfect_Stranger"target="_blank"><b>7. My Perfect Stranger </b></a><br> 
+    <img src="https://miro.medium.com/v2/resize:fit:949/1*Bde6YpaO00YGLPW0hEGGLQ.jpeg"alt="miro.medium.com" width="200" height="280"style="padding:10px"> 
+     </p>
+     
+      <p style="display:inline-block; padding:10px">
+     <a href="https://asianwiki.com/The_Glory_Part_2"target="_blank"><b>8. The Glory Part 2 </b></a><br> 
+    <img src="https://asianwiki.com/images/0/0d/The_Glory_Part_2-mp1.jpeg"alt="asianwiki.com" width="200" height="280"style="padding:10px"> 
+       </p>
+     
+     <p style="display:inline-block; padding:10px">
+      <a href="https://asianwiki.com/King_the_Land"target="_blank"><b>9. King the Land </b></a><br>
+    <img src="https://i.mydramalist.com/jQyzPw_2f.jpg"alt="mydramlist.com" width="200" height="280" style="padding:10px"> 
+   </p>
+     
+       <p style="display:inline-block; padding:10px">
+      <a href="https://asianwiki.com/Celebrity_(Netflix)"target="_blank"><b>10. Celebrity</b></a><br>
+    <img src="https://asianwiki.com/images/6/69/Celebrity_Netflix-p1.jpg"alt="asianwiki.com" width="200" height="280" style="padding:10px"> 
+       </p>
+
+ <p><a href="#Home">Home</a></p>
+  </div>
+
+  <div id="Must-Watch" >
+  
+   <p>Here are my <strong>Top 5 must-watch</strong> kdramas I highly recommend:<br></p> 
+  <p style="display:inline-block; padding:10px">
+    1. Alchemy of Souls Season 2<br>  
+    <img src="https://asianwiki.com/images/2/2b/Alchemy_of_Souls_2-mp1.jpeg"alt="asianwiki.com" width="200" height="280" style="padding:10px">
+   </p>
+   
+    <p style="display:inline-block; padding:10px">
+     2. Descendents of the Sun<br> 
+    <img src="https://m.media-amazon.com/images/M/MV5BN2FiOWM3ZjEtNjkyYi00ZTRiLTkyNGMtMTIzYzNhYWViZTkwXkEyXkFqcGdeQXVyNDI3NjU1NzQ@._V1_.jpg"
+         alt="m.media-amazon.com" width="200" height="280" style="padding:10px">
+   </p>
+    
+     <p style="display:inline-block; padding:10px">
+     3. Strong girl Bong-Soon<br>
+    <img src="https://m.media-amazon.com/images/M/MV5BZWUyYmMyMjktMmFjNC00ZGFiLThjODYtNjQ1MzQyODhmZmVmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_FMjpg_UX1000_.jpg"
+         alt="m.media-amazon.com" width="200" height="280" style="padding:10px">
+       </p>
+   
+    <p style="display:inline-block; padding:10px">
+    4. Hotel Del Luna<br>
+    <img src="https://m.media-amazon.com/images/M/MV5BNWU3M2YxZmEtZTZiMi00NTBhLWEyYWMtOTBhOTEyMzkyYmI4XkEyXkFqcGdeQXVyMTA3MzQ4MTc0._V1_FMjpg_UX1000_.jpg"
+         alt="m-media-amazon.com" width="200" height="280" style="padding:10px">
+        </p>
+    
+      <p style="display:inline-block; padding:10px">
+     5. It's Okay to Not be Okay <br>
+    <img src="https://m.media-amazon.com/images/M/MV5BYTk0Nzk5ZWYtYTNlZi00YjBjLWJhYjctMWMwMmYyMDA5ZjJmXkEyXkFqcGdeQXVyNDY5MjMyNTg@._V1_.jpg"
+         alt="m-media-amazon.com" width="200" height="280" style="padding:10px"><br>
+        </p>
+  
+    <p>
+      <a href="#Home">Home</a>
+    </p>
+</div>
+     
+     <div id="Link">
+     <p> Here are some links to watch K-dramas for free:</p>
+      <ul>
+     <li><a href="https://dramacool.com.pa/" target="_blank"><i>Dramacool</i></a></li>
+       <li><a href="https://kissasian.cam/" target="_blank"><i>KissAsian</i></a></li>
+       <li><a href="https://www6.myasiantv.tv/drama" target="_blank"><i>MyAsianTv</i></a></li>
+    </ul>
+     <p>I will warn you, these websites may have a lot of ads, however, they are the best websites to binge-watch K-dramas!!</p>
+     <h4>Have fun watching these K-dramas!</h4>
+     </div>
+    </div>
+</body>
+   </html>
+</html>
